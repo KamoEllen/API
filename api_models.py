@@ -1,6 +1,6 @@
 from flask_restx import fields
 
-from .extensions import api 
+from extensions import api 
 
 student_model = api.model("Student", {
     "id": fields.Integer,
