@@ -2,9 +2,9 @@ from flask_restx import Resource, Namespace
 from flask_jwt_extended import jwt_required, get_jwt_identity, create_access_token, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
 
-from .api_models import course_model, student_model, course_input_model, student_input_model, user_model, login_model
-from .extensions import db
-from .models import Course, Student, User
+from api_models import course_model, student_model, course_input_model, student_input_model, user_model, login_model
+from extensions import db
+from models import Course, Student, User
 
 authorizations = {
     "jsonWebToken": {
